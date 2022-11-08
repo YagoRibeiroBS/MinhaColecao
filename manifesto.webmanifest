@@ -1,0 +1,13 @@
+{
+  "name": "Coleçaõ de Games",
+  "short_name": "Minha Coleção de Games",
+  "description": "Aplicação voltada para identificação de jogos da minha coleção privada",
+  "lang": "pt-BR",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff",
+  "theme_color": "#000",
+  "dir": "ltr"
+}

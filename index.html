@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+            <!--Código HTML do software para gestão da coleção de jogos-->
+
+  <head>
+    <title>Minha Coleção</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./tesi.css" />
+    <link rel="stylesheet" href="./colecaojogos.css" />
+    <script src="./tesi.js"></script>
+    <script src="./colecaojogos.js"></script>
+  </head>
+  <body>
+    <header class="headerBar dark">
+      <div class="appName">Minha Coleção</div>
+      <div class="badge warning"><span id="estado">0</span></div>
+    </header>
+
+          <!--Tela inicial contendo a lisat e jogos-->
+
+    <div id="tela1" class="component">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Estante de Jogos</h1>
+        <button id="btnAdic" class="button primary">
+          <img src="./assets/estante.png" />
+        </button>
+      </div>
+      <div class="componentContent">
+        <div id="blank">
+          <img src="./assets/5266579.png" />
+          <p>Sua estante está vazia, compre jogos e adicione clicando no botão.</p>
+        </div>
+        <ul id="listaDeJogos" class="list hidden"></ul>
+      </div>
+    </div>
+
+    <div id="tela2" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">
+          Novo Jogo
+        </h1>
+      </div> 
+      <!--Inicio da declaração das informações do jogo para adicioná-lo à lista-->
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputNovoJogo">Título:</label>
+          <input id="inputNovoJogo" type="text" autocomplete="off" />
+        </div>
+
+
+        
+    <div class="entrada">
+      <label for="entradagenero">Gênero:</label>
+      <select name="entradagenero" id="entradagenero">
+        <option> </option>
+        <option>RPG</option>
+        <option>Corrida</option>
+        <option>Aventura</option>
+        <option>Tiro</option>
+        <option>Terror</option>
+        <option>Luta</option>
+        <option>Outros</option>
+      </select>
+    </div>
+    <div class="entrada">
+      <label for="entradaplataforma">Plataforma:</label>
+      <input id="entradaplataforma" type="text">
+    </div>
+    <div class="entrada">
+      <label for="entradaedicao">Edição:</label>
+      <textarea name="" id="entradaedicao" cols="30" rows="1"></textarea>
+    </div>
+        <div class="buttonGroup mt1 end">
+          <button id="btnCanc1" class="button quarter light">Cancelar</button>
+          <button id="btnInc" class="button quarter primary" disabled>
+            Incluir
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+      <!--Tela de Alteração dos Jogos-->
+
+    
+    <div id="tela3" class="component hidden">
+      <div class="componentHeader">
+        <h1 class="componentTitle">Alterar informações do jogo</h1>
+      </div>
+      <div class="componentContent">
+        <div class="field">
+          <label for="inputalteraJogo">Nome do Jogo:</label>
+          <input id="inputalteraJogo" type="text" autocomplete="off" />
+        </div>
+
+        
+         <div class="entrada">
+      <label for="alteragenero">Gênero:</label>
+      <select name="genero" id="alteragenero">
+        <option> </option>
+        <option>RPG</option>
+        <option>Corrida</option>
+        <option>Aventura</option>
+        <option>Shooter (Tiro)</option>
+        <option>Terror</option>
+        <option>Luta</option>
+        <option>Outros</option>
+      </select>
+    </div>
+    <div class="entrada">
+      <label for="alteraplataforma">Plataforma:</label>
+      <input id="alteraplataforma" type="text">
+    </div>
+    <div class="entrada">
+      <label for="alteraedicao">Edição:</label>
+      <textarea name="" id="alteraedicao" cols="30" rows="1"></textarea>
+    </div>
+
+              <!--Botões-->
+
+        <div class="buttonGroup end mt1">
+          <button id="btnCanc2" class="button quarter light">Cancelar</button>
+          <button id="btnAlt" class="button quarter primary">Alterar</button>
+        </div>
+        <div class="buttonGroup end mt3">
+          <button id="btnDel" class="button quarter danger">
+            Apagar Jogo
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
